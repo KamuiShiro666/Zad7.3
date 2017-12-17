@@ -1,0 +1,15 @@
+body {
+	background-color: #233237;
+}
+.container {
+	margin: auto;
+	background-color: #18121E;
+	text-align: center;
+	color: white;
+}
+
+.lyrics {
+	color: #984B43;
+	width: 450px;
+	margin: auto;
+}
