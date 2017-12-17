@@ -6,10 +6,21 @@ body {
 	background-color: #18121E;
 	text-align: center;
 	color: white;
+	border-radius: 10px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 22px;
 }
 
 .lyrics {
 	color: #984B43;
+	font-size: 20px;
 	width: 450px;
 	margin: auto;
+	padding: 10px;
 }
