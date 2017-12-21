@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/KamuiShiroPL/learning-git-2/issues"
   },
-  "homepage": "https://github.com/KamuiShiroPL/learning-git-2#readme"
+  "homepage": "https://github.com/KamuiShiroPL/learning-git-2#readme",
+  "dependencies": {
+    "autoprefixer-cli": "^1.0.0",
+    "browser-sync": "^2.19.0",
+    "nu-html-checker": "^0.1.0"
+  }
 }
