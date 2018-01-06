@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "test": "npm run test:html",
+  "test:html": "glob-run nu-html-checker *.html"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "dependencies": {
     "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.19.0",
+    "glob-run": "^0.1.6",
     "nu-html-checker": "^0.1.0"
   }
 }
