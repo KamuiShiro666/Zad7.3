@@ -11,7 +11,8 @@
     "init:files": "touch README.md index.html sass/style.scss js/script.js",
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
     "init:npm-install": "npm install",
-    "build": "npm run build:sass && npm run build:autoprefixer && npm run test",
+    "build": "npm run build:clean && npm run build:sass && npm run build:autoprefixer && npm run test",
+    "build:clean": "rimraf sass/dev.scss",
     "build:sass": "node-sass --output-style compact -o css sass",
     "build:sass:dev": "node-sass --output-style expanded --source-map true -o css sass",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
@@ -20,7 +21,6 @@
     "watch:autoprefixer": "onchange -d 100 css/style.css -- autoprefixer-cli -o css/style.prefixed.css css/style.css",
     "watch:browser-sync": "browser-sync start --server --files \"css/*.css\" \"*.html\" --serveStatic \"./\""
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KamuiShiroPL/learning-git-2.git"
@@ -38,7 +38,8 @@
     "glob-run": "^0.1.6",
     "node-sass": "^4.7.2",
     "nu-html-checker": "^0.1.0",
-    "onchange": "^3.3.0"
+    "onchange": "^3.3.0",
+    "rimraf": "^2.6.2"
   },
   "devDependencies": {
     "parallelshell": "^3.0.2"
